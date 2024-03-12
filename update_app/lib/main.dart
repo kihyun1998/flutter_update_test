@@ -1,6 +1,15 @@
+import 'package:auto_updater/auto_updater.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  String feedURL = 'http://127.0.0.1:8000/static/appcast.xml';
+
+  // 로그 남겨야할 부분이다.
+  await autoUpdater.setFeedURL(feedURL);
+  await autoUpdater.checkForUpdates();
+  await autoUpdater.setScheduledCheckInterval(3600);
+
   runApp(const MyApp());
 }
 
