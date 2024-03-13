@@ -1,0 +1,8 @@
+app_id: 15B248E0-3E58-4509-AA5D-1FC749611FE3
+publisher: My Company, Inc.
+publisher_url: https://www.example.com/
+display_name: Update_test
+create_desktop_icon: false
+install_dir_name: Update_test
+locales:
+  - kr
