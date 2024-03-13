@@ -19,11 +19,15 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         home: Scaffold(
+          backgroundColor: const Color.fromARGB(255, 143, 209, 165),
           appBar: AppBar(title: const Text("App Update Test")),
           body: Center(
             child: Column(
               children: [
                 const Text("After Update"),
+                const SizedBox(
+                  height: 100,
+                ),
                 ElevatedButton(
                     onPressed: () async {
                       String feedURL = 'http://127.0.0.1:8000/dist/appcast.xml';
