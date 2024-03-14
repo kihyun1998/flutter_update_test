@@ -5,3 +5,4 @@ app = FastAPI()
 
 app.mount("/dist",StaticFiles(directory="dist"),name="dist")
 
+# uvicorn main:app --reload

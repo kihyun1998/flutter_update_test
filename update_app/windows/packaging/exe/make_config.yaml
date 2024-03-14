@@ -1,10 +1,11 @@
-# app_id: F900F6A6-418E-4D13-87BF-0CAE40C93559
-# publisher: My Company, Inc.
-# publisher_url: https://www.example.com/
-# display_name: Update_test
-# create_desktop_icon: false
-# install_dir_name: Update_test
-# locales:
-#   - kr
+app_id: F900F6A6-418E-4D13-87BF-0CAE40C93559
+publisher: My Company, Inc.
+publisher_url: https://www.example.com/
+display_name: update_app
+create_desktop_icon: false
+install_dir_name: C:\Users\User\update_app
+locales:
+  - kr
+  - en
 
-script_template: "./inno_setup.iss"
+# script_template: "./inno_setup.iss"

@@ -19,25 +19,35 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         home: Scaffold(
-          backgroundColor: const Color.fromARGB(255, 143, 209, 165),
-          appBar: AppBar(title: const Text("App Update Test")),
+          backgroundColor: const Color.fromARGB(255, 197, 164, 164),
+          appBar: AppBar(
+            title: const Text("App Update Test"),
+            backgroundColor: const Color.fromARGB(255, 197, 164, 164),
+          ),
           body: Center(
             child: Column(
               children: [
-                const Text("After Update"),
+                const Text(
+                  "Before Update",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 const SizedBox(
                   height: 100,
                 ),
                 ElevatedButton(
-                    onPressed: () async {
-                      String feedURL = 'http://127.0.0.1:8000/dist/appcast.xml';
+                  onPressed: () async {
+                    String feedURL = 'http://127.0.0.1:8000/dist/appcast.xml';
 
-                      // 로그 남겨야할 부분이다.
-                      await autoUpdater.setFeedURL(feedURL);
-                      await autoUpdater.checkForUpdates();
-                      await autoUpdater.setScheduledCheckInterval(3600);
-                    },
-                    child: const Text("Is update?")),
+                    // 로그 남겨야할 부분이다.
+                    await autoUpdater.setFeedURL(feedURL);
+                    await autoUpdater.checkForUpdates(inBackground: false);
+                    await autoUpdater.setScheduledCheckInterval(1);
+                  },
+                  child: const Text("Is update?"),
+                ),
               ],
             ),
           ),

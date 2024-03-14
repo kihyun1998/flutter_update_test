@@ -6,14 +6,17 @@
         <description>앱 업데이트 정보</description>
         <language>ko</language>
         <item>
-            <title>1.0.0</title>
+            <title>1.0.1</title>
             <description>이번 업데이트의 변경 사항</description>
-            <pubDate>Wed, 13 Mar 2024 12:01:00 +0800</pubDate>
+            <pubDate>Wed, 14 Mar 2024 12:01:00 +0800</pubDate>
+            <sparkle:tags>
+                <sparkle:criticalUpdate></sparkle:criticalUpdate>
+            </sparkle:tags>
             <enclosure url="http://127.0.0.1:8000/dist/1.0.1/update_app-1.0.1+1.0.1-windows-setup.exe"
-                       sparkle:dsaSignature="MD0CHAZXTaUWc/BJ0aIcM7yw748pYtAwGBVSYCWYF8QCHQDPcyW7i+FM535GtmMu802W5b9ZCUg5nbZjnAJD"
+                       sparkle:dsaSignature="MD4CHQDFSab3R7vPNf4xortjVRK850BH/VyZduQA+gNCAh0Al8d04tNvlgEpmnd3VrPO6BWgNbbxgRnvaxU45Q=="
                        sparkle:version="1.0.1"
                        sparkle:os="windows"
-                       sparkle:installerArguments=/SILENT /SP- /NOICONS
+                       sparkle:installerArguments="/SILENT /SP- /NOICONS"
                        length="0"
                        type="application/octet-stream" />
         </item>
